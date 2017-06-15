@@ -1,0 +1,326 @@
+body {
+	background: #fafafa;
+	color: #666;
+}
+
+/* 头部 */
+.header-wrap{
+	width: 99%;
+	height: 80px;
+	border-bottom: 2px solid #f5f5f5;
+	margin: 5px auto 0 auto;
+	position: relative;
+	z-index: 100;
+	background: #fff;
+}
+header {
+	width: 1000px;
+	height: 80px;
+	margin: auto;
+}
+
+header h1{
+	margin: 10px 0 0 0;
+	width: 240px;
+	height: 60px;
+	float: left;
+	overflow: hidden;
+}
+
+header h1 img {
+	width: 240px;
+	height: 68px;
+	border: medium none;
+	vertical-align: middle;
+}
+.wenzi{
+	font-size: 14px;
+	color: #aaa;
+	line-height: 20px;
+	float: right;
+	height: 40px;
+	margin-top: 30px;
+}
+
+.wenzi .ren {
+	width: 40px;
+	height: 40px;
+	margin-right: 6px;
+	border-radius: 100%;
+	vertical-align: top;
+	display: inline-block;
+}
+.wenzi .ren img {
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	border: medium none;
+	vertical-align: middle;
+}
+.wenzi .zi {
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.wenzi .zi a {
+	font-weight: 600;
+	margin-left: 4px;
+	color: #06c;
+}
+
+
+/* 中间部分 */
+.mid {
+	width: 1000px;
+	margin: 20px auto;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	min-height: 600px;
+}
+.left-pic {
+	width: 450px;
+	height: 350px;
+	float: left;
+	margin: 30px 0;
+	position: relative;
+	z-index: 1;
+}
+.left-pic img {
+	max-width: 450px;
+	max-height: 350px;
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	top: 0;
+}
+
+/* 右边部分 */
+
+.login{
+	background: #fff;
+	width: 440px;
+	padding: 19px 19px 29px 19px;
+	border: 1px solid #e6e6e6;
+	border-radius: 5px;
+	float: right;
+	position: relative;
+	z-index: 1;
+}
+.loginNav {
+	font-size: 0;
+	word-spacing: -1em;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+
+.loginNav li {
+	width: 50%;
+	height: 40px;
+	display: inline-block;
+	text-align: center;
+	vertical-align: bottom;
+	letter-spacing: normal;
+	word-spacing: normal;
+	margin-bottom: -1px;
+
+}
+
+.loginNav li a {
+	font-size: 18px;
+	line-height: 24px;
+	padding-bottom: 13px;
+	position: relative;
+	z-index: 1;
+}
+.loginNav li .active {
+	color: #ff5008;
+	display: block;
+	border-bottom: 3px solid #ff5008;
+}
+.loginMes {
+	height: 253px;
+	margin-top: 30px;
+	padding: 0 40px 20px 40px;
+	position: relative;
+	z-index: 1;
+}
+.show {
+	position: absolute;
+	top: 0;
+	width: 352px;
+}
+.loginForm {
+	display: block;
+}
+.loginForm dl {
+	width: 348px;
+	background: #fff;
+	height: 52px;
+	margin-top: -1px;
+	border: 1px solid #e6e6e6;
+	position: relative;
+	z-index: 1;
+}
+
+.loginForm dl dt {
+	font-size: 14px;
+	line-height: 20px;
+	color: #666;
+	width: 88px;
+	padding: 16px 0 16px 20px;
+	float: left ;
+}
+.loginForm dl dd {
+	height: 28px;
+	float: left;
+	padding: 12px 0;
+}
+.loginForm dl dd input {
+	width: 240px;
+	font-family: "microsoft yahei";
+	font-size: 14px;
+	line-height: 28px;
+	height: 28px;
+	padding: 0;
+	border: none 0;
+	outline: none;
+}
+
+.loginForm .code-div {
+	width: 100%;
+	height: 54px;
+}
+
+.loginForm .code-div dl {
+	width: 228px;
+	float: left;
+}
+
+.loginForm .code-div dl dd input {
+	width: 75px;
+}
+.loginForm .code-div span {
+	width: 120px;
+	height: 52px;
+	float: left; 
+	margin-top: -1px 0 0 -1px ;
+	border: 1px solid #e6e6e6;
+	position: relative;
+	z-index: 1;
+}
+.loginForm .code-div span img {
+	width: 120px;
+	height: 52px;
+	border: medium none;
+	vertical-align: middle;
+}
+.loginForm .code-div span a {
+	font-size: 14px;
+	text-decoration: none;
+	color: #fff;
+	line-height: 52px;
+	background: rgba(0,0,0,0.5);
+	text-align: center;
+	width: 120px;
+	height: 52px;
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	/* display: none; */
+}
+/* .loginForm .code-div span:hover a {
+	display: block;
+} */
+.loginForm .hadle-div {
+	line-height: 20px;
+	margin-top: 15px;
+	overflow: hidden;
+}
+.loginForm .hadle-div span {
+	color: #999;
+	float: left;
+}
+.loginForm .hadle-div a {
+	float: right;
+	color: #06c;
+}
+.loginForm .submit-div {
+	margin-top: 15px;
+}
+.loginForm .submit-div .submit {
+	width: 348px;
+	font-family: "microsoft yahei";
+	font-size: 16px;
+	font-weight: 600;
+	color: #fff;
+	background: #ff5008;
+	height: 42px;
+	border: 1px solid #f15c18;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.loginForm .submit-div 
+/* 下面 */
+
+.loginFot {
+	font-size: 0;
+	width: 340px;
+	margin: 0 auto;
+}
+.loginFot h4 {
+	font-size: 14px;
+	line-height: 20px;
+	color: #333;
+	font-weight: 600;
+	height: 20px;
+	margin-bottom: 10px;
+}
+.loginFot a {
+	font-size: 12px;
+	color: #aaa;
+	vertical-align: top;
+	display: inline-block;
+	height: 32px;
+	margin-right: 24px;
+}
+
+.loginFot a  i {
+	background-position: -64px 0!important;
+	background: url(../images/beijingtu.png) no-repeat;
+	vertical-align: middle;
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	margin-right: 6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

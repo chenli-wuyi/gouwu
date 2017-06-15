@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>央广购物</title>
+	<script type="text/javascript" src="js/jquery-1.12.3.js"></script>
+	<script type="text/javascript" src="js/maintop.js"></script>
+	<script type="text/javascript" src="js/louceng.js"></script>
+	<script type="text/javascript" src="js/louti.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/header.css" />
+	<link rel="stylesheet" type="text/css" href="css/nav.css" />
+	<link rel="stylesheet" type="text/css" href="css/mid.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+<body>
+	<!--S  header -->
+	<div id="header">
+		<div class="header">
+			<div class="right">
+				<div class="login">
+					<a href="html/denglu.html" class="deng">你好，请登录</a>
+					<a href="html/zhuce.html" class="zhuce">免费注册</a>
+				</div>
+				<div class="list">
+					<dl class="my-order">
+						<dt><a href="#">我的订单</a></dt>
+						<dd>
+							<ul>
+								<li><a href="#">待付款订单</a></li>
+								<li><a href="#">待确认收货</a></li>
+								<li><a href="#">待评价交易</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="my-favorite">
+						<dt>我的收藏</dt>
+						<dd>
+							<ul>
+								<li><a href="#">商品收藏</a></li>
+								<li><a href="#">店铺收藏</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="call-center">
+						<dt><a href="#">客户服务</a></dt>
+						<dd>
+							<ul>
+								<li><a href="#">购物指南</a></li>
+								<li><a href="#">售后服务</a></li>
+								<li><a href="#">商家服务</a></li>
+							</ul>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header-wrap">
+		<div class="header-wrap-auto">
+			<h1><a href="#"><img src="images/logo.png"></a></h1>
+			<div class="head-search-layout">
+				<div class="head-search-bar">
+					<span><a href="#">宝贝</a></span>
+					<input type="text" name="" placeholder="请输入您要搜索的商品关键字">
+					<input type="button" name="" value="搜索">
+				</div>
+				<div class="keyword">
+					<ul>
+						<li><a href="#">西湖龙井</a></li>
+						<li><a href="#">良品堂辽参</a></li>
+						<li><a href="#">安溪铁观音</a></li>
+						<li><a href="#">达芙妮</a></li>
+						<li><a href="#">荣事达</a></li>
+						<li><a href="#">THERMOS</a></li>
+						<li><a href="#">施华洛世奇</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="header-user-menu">
+				<span><a href="#">我的商城</a></span>
+				<span><a href="#" class="gouwuche">购物车结算</a></span>
+			</div>
+		</div>
+	</div>
+	<!--E  header -->
+	<!-- s nav -->
+	<nav>
+		<div class="nav-wrapper">
+			<ul class="list1">
+				<h2><a href="#">所有商品分类</a></h2>
+				<li>
+					<div class="meau"><h4><a href="html/shopping.html" target="_blank" class="shiping">食品饮料</a></h4></div>
+					<div class="meau-content">
+						<dl>
+							<dt><h3><a href="#">粮油调味</a></h3></dt>
+							<dd>
+								<a href="#">米面杂粮</a>
+								<a href="#">食用油</a>
+								<a href="#">调味品</a>
+								<a href="#">南北干货</a>
+								<a href="#">方便食品</a>
+								<a href="#">有机食品</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt><h3><a href="#">休闲食品</a></h3></dt>
+							<dd>
+								<a href="#">坚果炒货</a>
+								<a href="#">肉干肉脯</a>
+								<a href="#">蜜饯果干</a>
+								<a href="#">糖果/巧克力</a>
+								<a href="#">饼干蛋糕</a>
+								<a href="#">无糖食品</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt><h3><a href="#">进口食品</a></h3></dt>
+							<dd>
+								<a href="#">饼干蛋糕</a>
+								<a href="#">糖果/巧克力</a>
+								<a href="#">休闲零食</a>
+								<a href="#">冲调饮品</a>
+								<a href="#">粮油调味</a>
+								<a href="#">牛奶</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt><h3><a href="#">饮料冲调</a></h3></dt>
+							<dd>
+								<a href="#">饮用水</a>
+								<a href="#">饮料</a>
+								<a href="#">牛奶乳品</a>
+								<a href="#">咖啡/奶茶</a>
+								<a href="#">冲饮谷物</a>
+								<a href="#">蜂蜜/柚子茶</a>
+								<a href="#">成人奶粉</a>
+								<a href="#">其他</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt><h3><a href="#">食品礼券</a></h3></dt>
+							<dd>
+								<a href="#">月饼</a>
+								<a href="#">大闸蟹</a>
+								<a href="#">粽子</a>
+								<a href="#">卡券</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt><h3><a href="#">茗茶</a></h3></dt>
+							<dd>
+								<a href="#">铁观音</a>
+								<a href="#">普洱</a>
+								<a href="#">龙井</a>
+								<a href="#">绿茶</a>
+								<a href="#">红茶</a>
+								<a href="#">乌龙茶</a>
+								<a href="#">花草茶</a>
+								<a href="#">养生茶</a>
+								<a href="#">黑茶</a>
+								<a href="#">白茶</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt><h3><a href="#">地方特产</a></h3></dt>
+							<dd>
+								<a href="#">北京</a>
+								<a href="#">新疆</a>
+								<a href="#">山西</a>
+								<a href="#">内蒙古</a>
+								<a href="#">福建</a>
+								<a href="#">湖南</a>
+								<a href="#">四川</a>
+								<a href="#">养生茶</a>
+								<a href="#">云南</a>
+								<a href="#">东北</a>
+								<a href="#">其他特产</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt><h3><a href="#">生鲜</a></h3></dt>
+							<dd>
+								<a href="#">猪牛羊肉</a>
+								<a href="#">新鲜水果</a>
+								<a href="#">海鲜水产</a>
+								<a href="#">禽类蛋品</a>
+								<a href="#">新鲜素菜</a>
+								<a href="#">速冻食品</a>
+							</dd>
+						</dl>
+						<div class="meau-right">
+							<a href="#"><img src="images/food1.jpg" alt=""></a>
+							<a href="#"><img src="images/food2.jpg" alt=""></a>
+							<a href="#"><img src="images/food3.jpg" alt=""></a>
+						</div>
+					</div>
+				</li>
+				<li><div class="meau"><h4><a href="#">中外名酒</a></h4></div></li>
+				<li><div class="meau"><h4><a href="#">营养保健</a></h4></div></li>
+				<li><div class="meau"><h4><a href="#">珠宝首饰</a></h4></div></li>
+				<li><div class="meau"><h4><a href="#">厨房用具</a></h4></div></li>
+				<li><div class="meau"><h4><a href="#">家用电器</a></h4></div></li>
+				<li><div class="meau"><h4><a href="#">个护化妆</a></h4></div></li>
+				<li><div class="meau"><h4><a href="#">服饰内衣</a></h4></div></li>
+				<li><div class="meau"><h4><a href="#">礼品箱包</a></h4></div></li>
+				<li><div class="meau"><h4><a href="#">文化收藏</a></h4></div></li>
+			</ul>
+			<ul class="list2">
+				<li><a href="#">首页</a></li>
+				<li><a href="#">TV直播</a></li>
+				<li><a href="#">品牌特卖</a></li>
+				<li><a href="#">名品汇</a></li>
+				<li><a href="#">清仓专区</a></li>
+			</ul>
+		</div>
+	</nav>
+	<!-- e nav -->
+	<!-- s mid -->
+	<div class="mid">
+		<div class="mid-wrap">
+			<div class="mid-top">
+				<div class="mid-top-left">
+					<div class="tv">
+						<a href="#">
+							<img src="images/top0.png">
+						</a>
+					</div>
+					<div class="top1">
+						<a href="#"><img src="images/top1.png" alt=""></a>
+						<p><a href="#">韩束秘蜜专宠套组 货号120116</a></p>
+						<span>￥199.00</span>
+						<span><a href="#">看直播</a></span>
+					</div>
+				</div>
+				<div class="mid-top-right">
+					<div class="tv">
+						<a href="#">
+							<img src="images/top2.png">
+						</a>
+					</div>
+					<div class="top1">
+						<a href="#"><img src="images/top3.png" alt=""></a>
+						<p><a href="#">东方瑞兽招财貔貅摆件 货号120116</a></p>
+						<span>￥998.00</span>
+					</div>
+				</div>
+				<div class="mid-right">
+					<a href="#"><img src="images/top4.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+		<div class="mid-img">
+			<div class="lunbo">
+				<ul class="mid-list1">
+					<li><a href="#"><img src="images/main1.jpg" alt=""></a></li>
+					<li><a href="#"><img src="images/main2.jpg" alt=""></a></li>
+					<li><a href="#"><img src="images/main3.jpg" alt=""></a></li>
+					<li><a href="#"><img src="images/main4.jpg" alt=""></a></li>
+					<li><a href="#"><img src="images/main5.jpg" alt=""></a></li>
+				</ul>
+				<ul class="mid-list2">
+					<li class="active">1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+				</ul>
+				<div id="prev">上一页</div>
+				<div id="next">下一页</div>
+			</div>
+			<div class="mid-img-right">
+				<h2>今日最大牌</h2>
+				<div class="right-max">
+					<a href="#"><img src="images/jinri.jpg" alt=""></a>
+					<h3>玉琳宝珑旗舰店</h3>
+					 <p>珍选翡翠、和田玉、琥珀蜜蜡、木手串。念传于心，典藏于情</p>
+				</div>
+			</div>
+
+		</div>
+		
+	</div>
+	<!-- e mid -->
+	<!-- s main -->
+	<main>
+		<div id="main">
+			
+			<div class="home-sale-layout">
+				<ul>
+					<li><a href="#" class="xiangqing">
+						<h3>COACH女包</h3>
+						<h5>【名品汇】限时特价仅售1299</h5>
+						<img src="images/shoufeng1.jpg">
+					</a></li>
+					<li><a href="#">
+						<h3>蔻驰太阳镜</h3>
+						<h5>【名品汇】合金镜框个性时尚</h5>
+						<img src="images/shoufeng2.jpg">
+					</a></li>
+					<li><a href="#">
+						<h3>GUCCI钱包</h3>
+						<h5>【名品汇】经典LOGO超值低价</h5>
+						<img src="images/shoufeng3.jpg">
+					</a></li>
+					<li><a href="#">
+						<h3>宝格丽手环</h3>
+						<h5>【名品汇】满减优惠经典爆款</h5>
+						<img src="images/shoufeng4.jpg">
+					</a></li>
+				</ul>
+			</div>
+			<!-- 左侧楼梯 -->
+		<div id="loutiNav">
+			<div class="louPic"><a href="#"><img src="images/louti.jpg" alt=""></a></div>
+			<ul>
+				<li ><span class="active">品牌特卖</span></li>
+				<li><span>食品酒水</span></li>
+				<li><span>家电家居</span></li>
+				<li><span>珠宝收藏</span></li>
+				<li><span>个性美妆</span></li>
+				<li><span>服装配饰</span></li>
+				<li><span>会员专享</span></li>
+			</ul>
+			<div class="fanhuiTop">top</div>
+		</div>
+			<!-- 楼层开始 -->
+			<!-- 品牌特卖 -->
+			<div class="floor louti" id="floorSpecBrand">
+				<div class="floor-top">
+					<span></span>
+					<h2>品牌特卖</h2>
+				</div>
+				<div class="floor-img">
+					<ul>
+						<li><a href="#"><img src="images/pinpai1.png" alt=""></a></li>
+						<li><a href="#"><img src="images/pinpai2.png" alt=""></a></li>
+						<li><a href="#"><img src="images/pinpai3.png" alt=""></a></li>
+						<li><a href="#"><img src="images/pinpai4.png" alt=""></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- 1f食品酒水 -->
+			<div class="food louti">
+				<!-- 列表 -->
+				<div class="food-top">
+					<h2>
+						<span>1F</span>
+						食品酒水
+					</h2>
+					<ul>
+						<li class="active"><a href="#">热门推荐</a></li>
+						<li><a href="#">食品饮料</a></li>
+						<li><a href="#">热销名酒</a></li>
+						<li><a href="#">营养保健</a></li>
+					</ul>
+				</div>
+				<!-- 内容 -->
+				<div class="content">
+					<div class="content_left">
+						<div class="banner">
+							<a href="#"><img src="images/meijiu.jpg" alt=""></a>
+						</div>
+						<ul class="themes">
+							<li><a href="#"><span><img src="images/icon.png" alt=""></span>方便速食</a></li>
+							<li><a href="#"><span><img src="images/icon1.png" alt=""></span>休闲零食</a></li>
+							<li><a href="#"><span><img src="images/icon2.png" alt=""></span>葡萄酒</a></li>
+							<li><a href="#"><span><img src="images/icon3.png" alt=""></span>醇香白酒</a></li>
+						</ul>
+						<ul class="words">
+							<li><a href="#">开碗就能吃的燕窝</a></li>
+							<li><a href="#">桃花姬</a></li>
+							<li><a href="#">方家铺子</a></li>
+							<li><a href="#">茗茶</a></li>
+							<li><a href="#">茅台</a></li>
+							<li><a href="#">洋酒</a></li>
+							<li><a href="#">古方红糖</a></li>
+							<li><a href="#">胭脂放西米红豆粉</a></li>
+							<li><a href="#">营养燕麦</a></li>
+							<li><a href="#">冷榨脱蜡亚麻籽油</a></li>
+							<li><a href="#">自然味良品手指型饼干</a></li>
+						</ul>
+					</div>
+					<div class="content_right">
+						<div class="right_inner">
+							<ul class="right_body">
+								<li><a href="#"><img src="images/fd1.jpg" alt=""></a></li>
+								<li class="padd"><a href="#"><img src="images/fd2.jpg" alt=""></a></li>
+								<li><a href="#"><img src="images/fd3.jpg" alt=""></a></li>
+								<li class="padd"><a href="#"><img src="images/fd4.jpg" alt=""></a></li>
+							</ul>
+							<ul class="right_extra">
+								<li><a href="#"><img src="images/fd5.jpg" alt=""></a></li>
+								<li><a href="#"><img src="images/fd6.jpg" alt=""></a></li>
+							</ul>
+						</div>
+						<!-- 中间轮播的图片 -->
+						<div class="right_side">
+							<div class="bx-wrapper">
+								<ul class="wrap-list1 carousel_list1">
+									<li><a href="#"><img src="images/fdd1.jpg" alt=""></a><a href="#"><img src="images/fdd2.jpg" alt=""></a></li>
+									<li><a href="#"><img src="images/fdd3.jpg" alt=""></a><a href="#"><img src="images/fdd4.jpg" alt=""></a></li>
+									<li><a href="#"><img src="images/fdd5.jpg" alt=""></a><a href="#"><img src="images/fdd6.jpg" alt=""></a></li>
+									<li><a href="#"><img src="images/fdd7.jpg" alt=""></a><a href="#"><img src="images/fdd8.jpg" alt=""></a></li>
+									<li><a href="#"><img src="images/fdd9.jpg" alt=""></a><a href="#"><img src="images/fdd10.jpg" alt=""></a></li>
+									<!-- <li><a href="#"><img src="images/fdd11.jpg" alt=""></a><a href="#"><img src="images/fdd12.jpg" alt=""></a></li> -->
+								</ul>
+								<ul class="wrap-list2 carousel_list2">
+									<li class="active"></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+								<div class="prev">上一页</div>
+								<div class="next">下一页</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 下方图标 -->
+				<div class="tubiao">
+					<ul>
+						<li><a href="#"><img src="images/tb1.jpg" alt=""></a></li>
+						<li><a href="#"><img src="images/tb2.jpg" alt=""></a></li>
+						<li><a href="#"><img src="images/tb3.jpg" alt=""></a></li>
+						<li><a href="#"><img src="images/tb4.jpg" alt=""></a></li>
+						<li><a href="#"><img src="images/tb5.jpg" alt=""></a></li>
+						<li><a href="#"><img src="images/tb6.jpg" alt=""></a></li>
+						<li><a href="#"><img src="images/tb7.jpg" alt=""></a></li>
+						<li><a href="#"><img src="images/tb8.jpg" alt=""></a></li>
+						<li><a href="#"><img src="images/tb9.jpg" alt=""></a></li>
+						<li><a href="#"><img src="images/tb10.jpg" alt=""></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- 2f家电家居 -->
+			<div class="jiaju louti">
+				<!-- 列表 -->
+				<div class="food-top">
+					<h2>
+						<span>2F</span>
+						家电家居
+					</h2>
+					<ul>
+						<li class="active"><a href="#">热门推荐</a></li>
+						<li><a href="#">厨房用具</a></li>
+						<li><a href="#">家用电器</a></li>
+						<li><a href="#">家居家装</a></li>
+					</ul>
+				</div>
+				<!-- 内容 -->
+				<div class="content">
+					<div class="content_left">
+						<div class="banner">
+							<a href="#"><img src="images/cufang.jpg" alt=""></a>
+						</div>
+						<ul class="themes">
+							<li><a href="#"><span><img src="images/icon.png" alt=""></span>厨房电器</a></li>
+							<li><a href="#"><span><img src="images/icon1.png" alt=""></span>烹饪锅具</a></li>
+							<li><a href="#"><span><img src="images/icon2.png" alt=""></span>茶壶茶盘</a></li>
+							<li><a href="#"><span><img src="images/icon3.png" alt=""></span>家具陈设</a></li>
+						</ul>
+						<ul class="words">
+							<li><a href="#">拒绝雾霾天</a></li>
+							<li><a href="#">荣事达</a></li>
+							<li><a href="#">锁住新鲜</a></li>
+							<li><a href="#">对于燥说"NO"</a></li>
+							<li><a href="#">迪士尼</a></li>
+							<li><a href="#">温馨舒适拥爱入眠</a></li>
+							<li><a href="#">春季重养生</a></li>
+							<li><a href="#">艾特巴赫</a></li>
+							<li><a href="#">膳魔师</a></li>
+							<li><a href="#">自动清扫省心更省力</a></li>
+						</ul>
+					</div>
+					<div class="content_right">
+						<div class="right_inner">
+							<ul class="right_body">
+								<li><a href="#"><img src="images/guo1.jpg" alt=""></a></li>
+								<li class="padd"><a href="#"><img src="images/guo2.jpg" alt=""></a></li>
+								<li><a href="#"><img src="images/guo3.jpg" alt=""></a></li>
+								<li class="padd"><a href="#"><img src="images/guo4.jpg" alt=""></a></li>
+							</ul>
+							<ul class="right_extra">
+								<li><a href="#"><img src="images/guo5.jpg" alt=""></a></li>
+								<li><a href="#"><img src="images/guo6.jpg" alt=""></a></li>
+							</ul>
+						</div>
+						<!-- 中间轮播的图片 -->
+						<div class="right_side">
+							<div class="bx-wrapper">
+								<ul class="wrap-list1 carousel_list1">
+									<li><a href="#"><img src="images/wan1.jpg" alt=""></a><a href="#"><img src="images/wan2.jpg" alt=""></a></li>
+									<li><a href="#"><img src="images/wan3.jpg" alt=""></a><a href="#"><img src="images/wan4.jpg" alt=""></a></li>wan
+									<li><a href="#"><img src="images/wan5.jpg" alt=""></a><a href="#"><img src="images/wan6.jpg" alt=""></a></li>
+									<li><a href="#"><img src="images/wan7.jpg" alt=""></a><a href="#"><img src="images/wan8.jpg" alt=""></a></li>
+									<li><a href="#"><img src="images/wan9.jpg" alt=""></a><a href="#"><img src="images/wan10.jpg" alt=""></a></li>
+									<!-- <li><a href="#"><img src="images/fdd11.jpg" alt=""></a><a href="#"><img src="images/fdd12.jpg" alt=""></a></li> -->
+								</ul>
+								<ul class="wrap-list2 carousel_list2">
+									<li class="active"></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+								<div class="prev">上一页</div>
+								<div class="next">下一页</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 下方图标 -->
+				<div class="tubiao">
+					<ul>
+						<li><a href="#"><img src="images/tb1.jpg" alt=""></a></li>
+						<li><a href="#"><img src="images/tb2.jpg" alt=""></a></li>
+						<li><a href="#"><img src="images/tb3.jpg" alt=""></a></li>
+						<li><a href="#"><img src="images/tb4.jpg" alt=""></a></li>
+						<li><a href="#"><img src="images/tb5.jpg" alt=""></a></li>
+						<li><a href="#"><img src="images/tb6.jpg" alt=""></a></li>
+						<li><a href="#"><img src="images/tb7.jpg" alt=""></a></li>
+						<li><a href="#"><img src="images/tb8.jpg" alt=""></a></li>
+						<li><a href="#"><img src="images/tb9.jpg" alt=""></a></li>
+						<li><a href="#"><img src="images/tb10.jpg" alt=""></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- 3f珠宝珍藏 -->
+			<div class="zhubao louti">
+				<!-- 列表 -->
+				<div class="food-top">
+					<h2>
+						<span>3F</span>
+						珠宝珍藏
+					</h2>
+					<ul>
+						<li class="active"><a href="#">热门推荐</a></li>
+						<li><a href="#">珠宝首饰</a></li>
+						<li><a href="#">时尚钟表</a></li>
+						<li><a href="#">文化收藏</a></li>
+					</ul>
+				</div>
+				<!-- 内容 -->
+				<div class="content">
+					<div class="content_left">
+						<div class="banner">
+							<a href="#"><img src="images/zhu1.jpg" alt=""></a>
+						</div>
+						<ul class="themes">
+							<li><a href="#"><span><img src="images/icon.png" alt=""></span>翡翠玉石</a></li>
+							<li><a href="#"><span><img src="images/icon1.png" alt=""></span>黄金饰品</a></li>
+							<li><a href="#"><span><img src="images/icon2.png" alt=""></span>木手串</a></li>
+							<li><a href="#"><span><img src="images/icon3.png" alt=""></span>器物摆件</a></li>
+						</ul>
+						<ul class="words">
+							<li><a href="#">珍贵砖石</a></li>
+							<li><a href="#">芭法娜珠宝</a></li>
+							<li><a href="#">翰龙精品</a></li>
+							<li><a href="#">秦轩银饰</a></li>
+							<li><a href="#">珍珠</a></li>
+							<li><a href="#">魅力彩宝</a></li>
+							<li><a href="#">朵朵贝儿</a></li>
+							<li><a href="#">博雅天下书店</a></li>
+							<li><a href="#">书画票证</a></li>
+							<li><a href="#">翡翠玉石</a></li>
+							<li><a href="#">木饰</a></li>
+							<li><a href="#">只得珍藏</a></li>
+						</ul>
+					</div>
+					<div class="content_right">
+						<div class="right_inner">
+							<ul class="right_body">
+								<li><a href="#"><img src="images/bao1.jpg" alt=""></a></li>
+								<li class="padd"><a href="#"><img src="images/bao2.jpg" alt=""></a></li>
+								<li><a href="#"><img src="images/bao3.jpg" alt=""></a></li>
+								<li class="padd"><a href="#"><img src="images/bao4.jpg" alt=""></a></li>
+							</ul>
+							<ul class="right_extra">
+								<li><a href="#"><img src="images/bao5.jpg" alt=""></a></li>
+								<li><a href="#"><img src="images/bao6.jpg" alt=""></a></li>
+							</ul>
+						</div>
+						<!-- 中间轮播的图片 -->
+						<div class="right_side">
+							<div class="bx-wrapper">
+								<ul class="wrap-list1 carousel_list1">
+									<li><a href="#"><img src="images/zhuan1.jpg" alt=""></a><a href="#"><img src="images/zhuan2.jpg" alt=""></a></li>
+									<li><a href="#"><img src="images/zhuan3.jpg" alt=""></a><a href="#"><img src="images/zhuan4.jpg" alt=""></a></li>
+									<li><a href="#"><img src="images/zhuan5.jpg" alt=""></a><a href="#"><img src="images/zhuan6.jpg" alt=""></a></li>
+									<li><a href="#"><img src="images/zhuan7.jpg" alt=""></a><a href="#"><img src="images/zhuan8.jpg" alt=""></a></li>
+									<li><a href="#"><img src="images/zhuan9.jpg" alt=""></a><a href="#"><img src="images/zhuan10.jpg" alt=""></a></li>
+									<!-- <li><a href="#"><img src="images/fdd11.jpg" alt=""></a><a href="#"><img src="images/fdd12.jpg" alt=""></a></li> -->
+								</ul>
+								<ul class="wrap-list2 carousel_list2">
+									<li class="active"></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+								<div class="prev">上一页</div>
+								<div class="next">下一页</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 下方图标 -->
+				<div class="tubiao">
+					<ul>
+						<li><a href="#"><img src="images/tb1.jpg" alt=""></a></li>
+						<li><a href="#"><img src="images/tb2.jpg" alt=""></a></li>
+						<li><a href="#"><img src="images/tb3.jpg" alt=""></a></li>
+						<li><a href="#"><img src="images/tb4.jpg" alt=""></a></li>
+						<li><a href="#"><img src="images/tb5.jpg" alt=""></a></li>
+						<li><a href="#"><img src="images/tb6.jpg" alt=""></a></li>
+						<li><a href="#"><img src="images/tb7.jpg" alt=""></a></li>
+						<li><a href="#"><img src="images/tb8.jpg" alt=""></a></li>
+						<li><a href="#"><img src="images/tb9.jpg" alt=""></a></li>
+						<li><a href="#"><img src="images/tb10.jpg" alt=""></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- 4f个性化妆 -->
+			<div class="huazhuang louti">
+				<!-- 列表 -->
+				<div class="food-top">
+					<h2>
+						<span>4F</span>
+						个性化妆
+					</h2>
+					<ul>
+						<li class="active"><a href="#">热门推荐</a></li>
+						<li><a href="#">面部护理</a></li>
+						<li><a href="#">洗发护发</a></li>
+						<li><a href="#">香水彩妆</a></li>
+						<li><a href="#">清洁用品</a></li>
+					</ul>
+				</div>
+				<!-- 内容 -->
+				<div class="content">
+					<div class="content_left">
+						<div class="banner">
+							<a href="#"><img src="images/gexing.jpg" alt=""></a>
+						</div>
+						<ul class="themes">
+							<li><a href="#"><span><img src="images/icon.png" alt=""></span>清洁用品</a></li>
+							<li><a href="#"><span><img src="images/icon1.png" alt=""></span>面部护理</a></li>
+							<li><a href="#"><span><img src="images/icon2.png" alt=""></span>口腔护理</a></li>
+							<li><a href="#"><span><img src="images/icon3.png" alt=""></span>香水彩妆</a></li>
+						</ul>
+						<ul class="words">
+							<li><a href="#">花王蒸汽眼罩</a></li>
+							<li><a href="#">资生堂</a></li>
+							<li><a href="#">女神爱心装</a></li>
+							<li><a href="#">呵护口腔健康</a></li>
+							<li><a href="#">手工香皂</a></li>
+							<li><a href="#">家居清洁好帮手</a></li>
+							<li><a href="#">爱上襄汾爱上</a></li>
+							<li><a href="#">海外尖货</a></li>
+							<li><a href="#">为秀发加点颜色</a></li>
+							<li><a href="#">足贴</a></li>
+						</ul>
+					</div>
+					<div class="content_right">
+						<div class="right_inner">
+							<ul class="right_body">
+								<li><a href="#"><img src="images/hua1.jpg" alt=""></a></li>
+								<li class="padd"><a href="#"><img src="images/hua2.jpg" alt=""></a></li>
+								<li><a href="#"><img src="images/hua3.jpg" alt=""></a></li>
+								<li class="padd"><a href="#"><img src="images/hua4.jpg" alt=""></a></li>
+							</ul>
+							<ul class="right_extra">
+								<li><a href="#"><img src="images/hua5.jpg" alt=""></a></li>
+								<li><a href="#"><img src="images/hua6.jpg" alt=""></a></li>
+							</ul>
+						</div>
+						<!-- 中间轮播的图片 -->
+						<div class="right_side">
+							<div class="bx-wrapper">
+								<ul class="wrap-list1 carousel_list1">
+									<li><a href="#"><img src="images/hua9.jpg" alt=""></a><a href="#"><img src="images/hua10.jpg" alt=""></a></li>
+									<li><a href="#"><img src="images/zhuan3.jpg" alt=""></a><a href="#"><img src="images/zhuan4.jpg" alt=""></a></li>
+									<li><a href="#"><img src="images/zhuan5.jpg" alt=""></a><a href="#"><img src="images/zhuan6.jpg" alt=""></a></li>
+									<li><a href="#"><img src="images/zhuan7.jpg" alt=""></a><a href="#"><img src="images/zhuan8.jpg" alt=""></a></li>
+									<li><a href="#"><img src="images/zhuan9.jpg" alt=""></a><a href="#"><img src="images/zhuan10.jpg" alt=""></a></li>
+									<!-- <li><a href="#"><img src="images/fdd11.jpg" alt=""></a><a href="#"><img src="images/fdd12.jpg" alt=""></a></li> -->
+								</ul>
+								<ul class="wrap-list2 carousel_list2">
+									<li class="active"></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+								<div class="prev">上一页</div>
+								<div class="next">下一页</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 下方图标 -->
+				<div class="tubiao">
+					<ul>
+						<li><a href="#"><img src="images/tb1.jpg" alt=""></a></li>
+						<li><a href="#"><img src="images/tb2.jpg" alt=""></a></li>
+						<li><a href="#"><img src="images/tb3.jpg" alt=""></a></li>
+						<li><a href="#"><img src="images/tb4.jpg" alt=""></a></li>
+						<li><a href="#"><img src="images/tb5.jpg" alt=""></a></li>
+						<li><a href="#"><img src="images/tb6.jpg" alt=""></a></li>
+						<li><a href="#"><img src="images/tb7.jpg" alt=""></a></li>
+						<li><a href="#"><img src="images/tb8.jpg" alt=""></a></li>
+						<li><a href="#"><img src="images/tb9.jpg" alt=""></a></li>
+						<li><a href="#"><img src="images/tb10.jpg" alt=""></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- 5f服装配饰 -->
+			<div class="fuzhuang louti">
+				<!-- 列表 -->
+				<div class="food-top">
+					<h2>
+						<span>5F</span>
+						服装配饰
+					</h2>
+					<ul>
+						<li class="active"><a href="#">热门推荐</a></li>
+						<li><a href="#">轻奢饰品</a></li>
+						<li><a href="#">国际女装</a></li>
+						<li><a href="#">流行鞋靴</a></li>
+						<li><a href="#">运动户外</a></li>
+					</ul>
+				</div>
+				<!-- 内容 -->
+				<div class="content">
+					<div class="content_left">
+						<div class="banner">
+							<a href="#"><img src="images/yifu.jpg" alt=""></a>
+						</div>
+						<ul class="themes">
+							<li><a href="#"><span><img src="images/icon.png" alt=""></span>时尚钟表</a></li>
+							<li><a href="#"><span><img src="images/icon1.png" alt=""></span>国际女装</a></li>
+							<li><a href="#"><span><img src="images/icon2.png" alt=""></span>服饰配件</a></li>
+							<li><a href="#"><span><img src="images/icon3.png" alt=""></span>流行鞋靴</a></li>
+						</ul>
+						<ul class="words">
+							<li><a href="#">轻奢系列</a></li>
+							<li><a href="#">精美腕表</a></li>
+							<li><a href="#">LV经典爆款</a></li>
+							<li><a href="#">舒适内衣</a></li>
+							<li><a href="#">说走就走的旅行</a></li>
+							<li><a href="#">精美女包</a></li>
+							<li><a href="#">达芙妮官方店</a></li>
+							<li><a href="#">圈住点滴美好</a></li>
+							<li><a href="#">男鞋</a></li>
+							<li><a href="#">品质男装</a></li>
+						</ul>
+					</div>
+					<div class="content_right">
+						<div class="right_inner">
+							<ul class="right_body">
+								<li><a href="#"><img src="images/fu1.jpg" alt=""></a></li>
+								<li class="padd"><a href="#"><img src="images/fu2.jpg" alt=""></a></li>
+								<li><a href="#"><img src="images/fu3.jpg" alt=""></a></li>
+								<li class="padd"><a href="#"><img src="images/fu4.jpg" alt=""></a></li>
+							</ul>
+							<ul class="right_extra">
+								<li><a href="#"><img src="images/fu5.jpg" alt=""></a></li>
+								<li><a href="#"><img src="images/fu6.jpg" alt=""></a></li>
+							</ul>
+						</div>
+						<!-- 中间轮播的图片 -->
+						<div class="right_side">
+							<div class="bx-wrapper">
+								<ul class="wrap-list1 carousel_list1">
+									<li><a href="#"><img src="images/fu7.jpg" alt=""></a><a href="#"><img src="images/fu8.jpg" alt=""></a></li>
+									<li><a href="#"><img src="images/zhuan3.jpg" alt=""></a><a href="#"><img src="images/zhuan4.jpg" alt=""></a></li>
+									<li><a href="#"><img src="images/zhuan5.jpg" alt=""></a><a href="#"><img src="images/zhuan6.jpg" alt=""></a></li>
+									<li><a href="#"><img src="images/zhuan7.jpg" alt=""></a><a href="#"><img src="images/zhuan8.jpg" alt=""></a></li>
+									<li><a href="#"><img src="images/zhuan9.jpg" alt=""></a><a href="#"><img src="images/zhuan10.jpg" alt=""></a></li>
+									<!-- <li><a href="#"><img src="images/fdd11.jpg" alt=""></a><a href="#"><img src="images/fdd12.jpg" alt=""></a></li> -->
+								</ul>
+								<ul class="wrap-list2 carousel_list2">
+									<li class="active"></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+								<div class="prev">上一页</div>
+								<div class="next">下一页</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 下方图标 -->
+				<div class="tubiao">
+					<ul>
+						<li><a href="#"><img src="images/tb1.jpg" alt=""></a></li>
+						<li><a href="#"><img src="images/tb2.jpg" alt=""></a></li>
+						<li><a href="#"><img src="images/tb3.jpg" alt=""></a></li>
+						<li><a href="#"><img src="images/tb4.jpg" alt=""></a></li>
+						<li><a href="#"><img src="images/tb5.jpg" alt=""></a></li>
+						<li><a href="#"><img src="images/tb6.jpg" alt=""></a></li>
+						<li><a href="#"><img src="images/tb7.jpg" alt=""></a></li>
+						<li><a href="#"><img src="images/tb8.jpg" alt=""></a></li>
+						<li><a href="#"><img src="images/tb9.jpg" alt=""></a></li>
+						<li><a href="#"><img src="images/tb10.jpg" alt=""></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- 会员专享 -->
+			<div class="vip louti">
+				<div class="vip_share">
+					<div class="vip_title">
+						<div class="vip_left">
+							<i></i>
+							会员专享
+						</div>
+						<div class="vip_right">
+							<span><a href="#"><img src="images/vip2.png" alt="">会员活动</a></span>
+							<span><a href="#"><img src="images/vip3.png" alt="">会员权益</a></span>
+							<span><a href="#"><img src="images/vip4.png" alt="">物流查询</a></span>
+						</div>
+					</div>
+					<div class="vip_buttom">
+						<ul class="vipBottom">
+							<li><div class="vip_img"><a href="#"><img src="images/vt" alt=""></a></div><div class="vip_name">天兴天池古椴雪蜜团购组 货号120167</div></li>
+							<li><div class="vip_img"><a href="#"><img src="images/vt2" alt=""></a></div><div class="vip_name">贡牌龙井-明前茶套组 货号120221</div></li>
+							<li><div class="vip_img"><a href="#"><img src="images/vt3" alt=""></a></div><div class="vip_name">八马茶业安溪铁观音特惠组 货号120344</div></li>
+							<li><div class="vip_img"><a href="#"><img src="images/vt4.jpg@240w_240h" alt=""></a></div><div class="vip_name">红塔带鱼罐头套组 货号119954</div></li>
+							<li><div class="vip_img"><a href="#"><img src="images/vt5.jpg@240w_240h" alt=""></a></div><div class="vip_name">方家铺子海味干贝超值组 货号120238</div></li>
+						</ul>
+
+					</div>
+				</div>
+			</div>
+			<!-- 楼层结束 -->
+		</div>
+	</main>
+	<!-- e main -->
+	<!-- 公告上面部分 -->
+		<div class="ccti">
+			<div class="wrapper">
+				<div class="ccti_footer">
+					<i class="ccti1"></i>
+					<i class="ccti2"></i>
+					<i class="ccti3"></i>
+					<i class="ccti4"></i>
+				</div>
+			</div>
+		</div>
+		
+	<!-- 公告部分 -->
+	<div class="faq">
+		<div class="wrapper">
+			<div class="notice">
+				<div class="title">
+					<h2>公告</h2>
+				</div>
+				<div class="content">
+					<ul>
+						<li><a href="#">【公告】“希望的原野·央广助农日”第九站走进杭州品鉴西湖龙井</a></li>
+						<li><a href="#">【公告】“希望的原野：央广助农日”第八站重返“辽参故里”</a></li>
+						<li><a href="#">【公告】“希望的原野：央广助农日”第七站走进福建安溪</a></li>
+						<li><a href="#">【公告】央广购物被评选为北京市“诚信服务承诺单位”</a></li>
+					</ul>
+				</div>
+			</div>
+			<ul class="link">
+				<li>
+					<dl class="s1">
+						<dt>购物指南</dt>
+						<dd><a href="#">免费注册</a></dd>
+						<dd><a href="#">购物流程</a></dd>
+						<dd><a href="#">用户注册协议</a></dd>
+						<dd><a href="#">电子发票</a></dd>
+					</dl>
+				</li>
+				<li>
+					<dl class="s1">
+						<dt>商家服务</dt>
+						<dd><a href="#">招商标准</a></dd>
+						<dd><a href="#">平台总则</a></dd>
+						<dd><a href="#">入驻注意事项</a></dd>
+						<dd><a href="#">招商资质标准</a></dd>
+					</dl>
+				</li>
+				<li>
+					<dl class="s1">
+						<dt>支付配送</dt>
+						<dd><a href="#">支付方式</a></dd>
+						<dd><a href="#">配送范围</a></dd>
+						<dd><a href="#">配送时间</a></dd>
+						<dd><a href="#">购物卡</a></dd>
+					</dl>
+				</li>
+				<li>
+					<dl class="s1">
+						<dt>会员中心</dt>
+						<dd><a href="#">会员等级</a></dd>
+						<dd><a href="#">会员权益</a></dd>
+						<dd><a href="#">购物金</a></dd>
+						<dd><a href="#">找回密码</a></dd>
+					</dl>
+				</li>
+				<li>
+					<dl class="s1">
+						<dt>售后服务</dt>
+						<dd><a href="#">售后服务政策</a></dd>
+						<dd><a href="#">特色服务</a></dd>
+						<dd><a href="#">无忧购物</a></dd>
+						<dd><a href="#">权威监督</a></dd>
+					</dl>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- s footer -->
+	<footer>
+		<div class="footer_auto">
+			<p>
+				<a href="#">首页</a>|
+				<a href="#">招商合作</a>|
+				<a href="#">关央广购物于</a>|
+				<a href="#">联系我们</a>|
+				<a href="#">成供应商为</a>|
+				<a href="#">招贤纳士</a>
+			</p>
+			<p>
+				<i></i>
+				京公网安备：11011502002190&nbsp;&nbsp;
+				<a href="#">京ICP备10038858号</a>&nbsp;&nbsp;
+				<a href="#">食品流通许可证编号：SP1101151210063489</a>&nbsp;&nbsp;
+				<a href="#">信息网络传播视听节目许可证 0102002号</a>
+			</p>
+			<p>Copyright<em>©</em>2010-2017 cnrmall.com All Rights Reserved&nbsp;&nbsp;&nbsp;&nbsp;服务热线：4008-518-518
+			</p>
+			<ul class="footer_img">
+				<li><a href="#" class="img01"></a></li>
+				<li><a href="#" class="img02"></a></li>
+				<li><a href="#" class="img03"></a></li>
+				<li><a href="#" class="img04"></a></li>
+			</ul>
+		</div>
+	</footer>
+	<!-- e footer -->
+</body>
+</html>

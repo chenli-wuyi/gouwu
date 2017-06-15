@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>加入购物车</title>
+	<script type="text/javascript" src="../js/jquery-1.12.3.js"></script>
+	<script type="text/javascript" src="../js/maintop.js"></script>
+	<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="../js/shopping.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../css/header.css" />
+	<link rel="stylesheet" type="text/css" href="../css/nav.css" />
+	<link rel="stylesheet" type="text/css" href="../css/mid.css" />
+	<link rel="stylesheet" type="text/css" href="../css/main.css" />
+	<link rel="stylesheet" type="text/css" href="../css/shopping.css" />
+</head>
+<body>
+	<!--S  header -->
+	<div id="header">
+		<div class="header">
+			<div class="right">
+				<div class="login">
+					<a href="html/denglu.html">你好，请登录</a>
+					<a href="html/zhuce.html">免费注册</a>
+				</div>
+				<div class="list">
+					<dl class="my-order">
+						<dt><a href="#">我的订单</a></dt>
+						<dd>
+							<ul>
+								<li><a href="#">待付款订单</a></li>
+								<li><a href="#">待确认收货</a></li>
+								<li><a href="#">待评价交易</a></li>
+							</ul>
+						</dd>
+					</dl>
+					
+					<dl class="my-favorite">
+						<dt>我的收藏</dt>
+						<dd>
+							<ul>
+								<li><a href="#">商品收藏</a></li>
+								<li><a href="#">店铺收藏</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="call-center">
+						<dt><a href="#">客户服务</a></dt>
+						<dd>
+							<ul>
+								<li><a href="#">购物指南</a></li>
+								<li><a href="#">售后服务</a></li>
+								<li><a href="#">商家服务</a></li>
+							</ul>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header-wrap">
+		<div class="header-wrap-auto">
+			<h1><a href="#" class="zhuanlogo"><img src="../images/logo.png"></a></h1>
+			<div class="head-search-layout">
+				<div class="head-search-bar">
+					<span><a href="#">宝贝</a></span>
+					<input type="text" name="" placeholder="请输入您要搜索的商品关键字">
+					<input type="button" name="" value="搜索">
+				</div>
+				<div class="keyword">
+					<ul>
+						<li><a href="#">西湖龙井</a></li>
+						<li><a href="#">良品堂辽参</a></li>
+						<li><a href="#">安溪铁观音</a></li>
+						<li><a href="#">达芙妮</a></li>
+						<li><a href="#">荣事达</a></li>
+						<li><a href="#">THERMOS</a></li>
+						<li><a href="#">施华洛世奇</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="header-user-menu">
+				<span><a href="#">我的商城</a></span>
+				<span><a href="#" class="gouwu">购物车结算</a></span>
+			</div>
+		</div>
+	</div>
+	<!--E  header -->
+	<!-- s nav -->
+	<nav>
+		<div class="nav-wrapper">
+			<ul class="list1">
+				<h2><a href="#">所有商品分类</a></h2>
+				<li>
+					<div class="meau"><h4><a href="html/xiangqingye.html" target="_blank">食品饮料</a></h4></div>
+					<div class="meau-content">
+						<dl>
+							<dt><h3><a href="#">粮油调味</a></h3></dt>
+							<dd>
+								<a href="#">米面杂粮</a>
+								<a href="#">食用油</a>
+								<a href="#">调味品</a>
+								<a href="#">南北干货</a>
+								<a href="#">方便食品</a>
+								<a href="#">有机食品</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt><h3><a href="#">休闲食品</a></h3></dt>
+							<dd>
+								<a href="#">坚果炒货</a>
+								<a href="#">肉干肉脯</a>
+								<a href="#">蜜饯果干</a>
+								<a href="#">糖果/巧克力</a>
+								<a href="#">饼干蛋糕</a>
+								<a href="#">无糖食品</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt><h3><a href="#">进口食品</a></h3></dt>
+							<dd>
+								<a href="#">饼干蛋糕</a>
+								<a href="#">糖果/巧克力</a>
+								<a href="#">休闲零食</a>
+								<a href="#">冲调饮品</a>
+								<a href="#">粮油调味</a>
+								<a href="#">牛奶</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt><h3><a href="#">饮料冲调</a></h3></dt>
+							<dd>
+								<a href="#">饮用水</a>
+								<a href="#">饮料</a>
+								<a href="#">牛奶乳品</a>
+								<a href="#">咖啡/奶茶</a>
+								<a href="#">冲饮谷物</a>
+								<a href="#">蜂蜜/柚子茶</a>
+								<a href="#">成人奶粉</a>
+								<a href="#">其他</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt><h3><a href="#">食品礼券</a></h3></dt>
+							<dd>
+								<a href="#">月饼</a>
+								<a href="#">大闸蟹</a>
+								<a href="#">粽子</a>
+								<a href="#">卡券</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt><h3><a href="#">茗茶</a></h3></dt>
+							<dd>
+								<a href="#">铁观音</a>
+								<a href="#">普洱</a>
+								<a href="#">龙井</a>
+								<a href="#">绿茶</a>
+								<a href="#">红茶</a>
+								<a href="#">乌龙茶</a>
+								<a href="#">花草茶</a>
+								<a href="#">养生茶</a>
+								<a href="#">黑茶</a>
+								<a href="#">白茶</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt><h3><a href="#">地方特产</a></h3></dt>
+							<dd>
+								<a href="#">北京</a>
+								<a href="#">新疆</a>
+								<a href="#">山西</a>
+								<a href="#">内蒙古</a>
+								<a href="#">福建</a>
+								<a href="#">湖南</a>
+								<a href="#">四川</a>
+								<a href="#">养生茶</a>
+								<a href="#">云南</a>
+								<a href="#">东北</a>
+								<a href="#">其他特产</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt><h3><a href="#">生鲜</a></h3></dt>
+							<dd>
+								<a href="#">猪牛羊肉</a>
+								<a href="#">新鲜水果</a>
+								<a href="#">海鲜水产</a>
+								<a href="#">禽类蛋品</a>
+								<a href="#">新鲜素菜</a>
+								<a href="#">速冻食品</a>
+							</dd>
+						</dl>
+						<div class="meau-right">
+							<a href="#"><img src="../images/food1.jpg" alt=""></a>
+							<a href="#"><img src="../images/food2.jpg" alt=""></a>
+							<a href="#"><img src="../images/food3.jpg" alt=""></a>
+						</div>
+					</div>
+				</li>
+				<li><div class="meau"><h4><a href="#">中外名酒</a></h4></div></li>
+				<li><div class="meau"><h4><a href="#">营养保健</a></h4></div></li>
+				<li><div class="meau"><h4><a href="#">珠宝首饰</a></h4></div></li>
+				<li><div class="meau"><h4><a href="#">厨房用具</a></h4></div></li>
+				<li><div class="meau"><h4><a href="#">家用电器</a></h4></div></li>
+				<li><div class="meau"><h4><a href="#">个护化妆</a></h4></div></li>
+				<li><div class="meau"><h4><a href="#">服饰内衣</a></h4></div></li>
+				<li><div class="meau"><h4><a href="#">礼品箱包</a></h4></div></li>
+				<li><div class="meau"><h4><a href="#">文化收藏</a></h4></div></li>
+			</ul>
+			<ul class="list2">
+				<li><a href="#">首页</a></li>
+				<li><a href="#">TV直播</a></li>
+				<li><a href="#">品牌特卖</a></li>
+				<li><a href="#">名品汇</a></li>
+				<li><a href="#">清仓专区</a></li>
+			</ul>
+		</div>
+	</nav>
+	<!-- e nav -->
+	<!-- s 商品列表 -->
+	<div>
+		<div class="shop-wrap">
+			<!-- 选择 -->
+			<div class="bread">
+				<span><a href="#">食品饮料</a></span>
+			</div>
+			<!-- 分类 -->
+			<div class="selector">
+				<div class="title">
+					<h3><em>分类- <strong>"食品饮料"</strong>	</em>晒选结果</h3>
+				</div>
+				<div class="content">
+					<dl>
+						<dt>包含分类:</dt>
+						<dd>
+							<ul>
+								<li><a href="#">粮食调味</a></li>
+								<li><a href="#">休闲食品</a></li>
+								<li><a href="#">进口食品</a></li>
+								<li><a href="#">饮料冲调</a></li>
+								<li><a href="#"> 食品礼券</a></li>
+								<li><a href="#"> 茗茶</a></li>
+								<li><a href="#"> 地方特产</a></li>
+								<li><a href="#">  生鲜</a></li>
+							</ul>
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<!-- 排序 -->
+			<div class="layout">
+				<div class="array">
+					<ul>
+						<li class="active"><a href="#">默认排序</a></li>
+						<li><a href="#">成交量</a></li>
+						<li><a href="#" class="jiage">价格</a></li>
+						<li><a href="#">评论</a></li>
+					</ul>
+				</div>
+				<div class="filter">
+					<div>
+						<input type="text" placeholder="￥最低价">
+						<span>-</span>
+						<input type="text" placeholder="￥最高价">
+						<a href="#">确定</a>
+					</div>
+				</div>
+			</div>
+			
+			<!-- 商品图片排列 -->
+			<div class="goods-list">
+				<ul class="list-pic">			
+		
+					<!--<li class="item">
+						<div class="good-content">
+						
+							
+							<div class="good-pic">
+								<a href="#"><img src="../images/pic1.jpg@240w_240h" alt=""></a>
+							</div>
+
+						
+							<div class="good-mes">
+								<p>￥15.00</p>
+								<p>天依蜂洋槐蜜300g 货号118174</p>
+								<p><a href="JavaScript:;">加入购物车</a></p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</li>
+					<li class="item">
+						<div class="good-content">
+							
+							<div class="good-pic">
+								<a href="#"><img src="../images/pic2.jpg@240w_240h" alt=""></a>
+							</div>
+							
+							<div class="good-mes">
+								<p>￥199.00</p>
+								<p>天兴椴树蜜超值组（6瓶装） 货号118132</p>
+								<p><a href="JavaScript:;">加入购物车</a></p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</li>
+					<li class="item">
+						<div class="good-content">
+							<div class="good-pic">
+								<a href="#"><img src="../images/pic3.jpg@240w_240h" alt=""></a>
+							</div>
+							<div class="good-mes">
+								<p>￥27.00</p>
+								<p>天依蜂荔枝蜜500g 货号118170</p>
+								<p><a href="JavaScript:;">加入购物车</a></p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</li>
+					<li class="item">
+						<div class="good-content">
+							<div class="good-pic">
+								<a href="#"><img src="../images/pic4.jpg@240w_240h" alt=""></a>
+							</div>
+							<div class="good-mes">
+								<p>￥25.00</p>
+								<p>天依蜂百花蜜500g 货号118040</p>
+								<p><a href="JavaScript:;">加入购物车</a></p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</li>
+					<li class="item">
+						<div class="good-content">
+							<div class="good-pic">
+								<a href="#"><img src="../images/pic5.jpg@240w_240h" alt=""></a>
+							</div>
+							<div class="good-mes">
+								<p>￥85.00</p>
+								<p>西班牙原装进口布罗家族柠檬蜜300G</p>
+								<p><a href="JavaScript:;">加入购物车</a></p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</li>
+			-->
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- e 商品列表 -->
+
+
+	
+	
+	<!-- 公告上面部分 -->
+		<div class="ccti">
+			<div class="wrapper">
+				<div class="ccti_footer">
+					<i class="ccti1"></i>
+					<i class="ccti2"></i>
+					<i class="ccti3"></i>
+					<i class="ccti4"></i>
+				</div>
+			</div>
+		</div>
+		
+	<!-- 公告部分 -->
+	<div class="faq">
+		<div class="wrapper">
+			<div class="notice">
+				<div class="title">
+					<h2>公告</h2>
+				</div>
+				<div class="content">
+					<ul>
+						<li><a href="#">【公告】“希望的原野·央广助农日”第九站走进杭州品鉴西湖龙井</a></li>
+						<li><a href="#">【公告】“希望的原野：央广助农日”第八站重返“辽参故里”</a></li>
+						<li><a href="#">【公告】“希望的原野：央广助农日”第七站走进福建安溪</a></li>
+						<li><a href="#">【公告】央广购物被评选为北京市“诚信服务承诺单位”</a></li>
+					</ul>
+				</div>
+			</div>
+			<ul class="link">
+				<li>
+					<dl class="s1">
+						<dt>购物指南</dt>
+						<dd><a href="#">免费注册</a></dd>
+						<dd><a href="#">购物流程</a></dd>
+						<dd><a href="#">用户注册协议</a></dd>
+						<dd><a href="#">电子发票</a></dd>
+					</dl>
+				</li>
+				<li>
+					<dl class="s1">
+						<dt>商家服务</dt>
+						<dd><a href="#">招商标准</a></dd>
+						<dd><a href="#">平台总则</a></dd>
+						<dd><a href="#">入驻注意事项</a></dd>
+						<dd><a href="#">招商资质标准</a></dd>
+					</dl>
+				</li>
+				<li>
+					<dl class="s1">
+						<dt>支付配送</dt>
+						<dd><a href="#">支付方式</a></dd>
+						<dd><a href="#">配送范围</a></dd>
+						<dd><a href="#">配送时间</a></dd>
+						<dd><a href="#">购物卡</a></dd>
+					</dl>
+				</li>
+				<li>
+					<dl class="s1">
+						<dt>会员中心</dt>
+						<dd><a href="#">会员等级</a></dd>
+						<dd><a href="#">会员权益</a></dd>
+						<dd><a href="#">购物金</a></dd>
+						<dd><a href="#">找回密码</a></dd>
+					</dl>
+				</li>
+				<li>
+					<dl class="s1">
+						<dt>售后服务</dt>
+						<dd><a href="#">售后服务政策</a></dd>
+						<dd><a href="#">特色服务</a></dd>
+						<dd><a href="#">无忧购物</a></dd>
+						<dd><a href="#">权威监督</a></dd>
+					</dl>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- s footer -->
+	<footer>
+		<div class="footer_auto">
+			<p>
+				<a href="#">首页</a>|
+				<a href="#">招商合作</a>|
+				<a href="#">关央广购物于</a>|
+				<a href="#">联系我们</a>|
+				<a href="#">成供应商为</a>|
+				<a href="#">招贤纳士</a>
+			</p>
+			<p>
+				<i></i>
+				京公网安备：11011502002190&nbsp;&nbsp;
+				<a href="#">京ICP备10038858号</a>&nbsp;&nbsp;
+				<a href="#">食品流通许可证编号：SP1101151210063489</a>&nbsp;&nbsp;
+				<a href="#">信息网络传播视听节目许可证 0102002号</a>
+			</p>
+			<p>Copyright<em>©</em>2010-2017 cnrmall.com All Rights Reserved&nbsp;&nbsp;&nbsp;&nbsp;服务热线：4008-518-518
+			</p>
+			<ul class="footer_img">
+				<li><a href="#" class="img01"></a></li>
+				<li><a href="#" class="img02"></a></li>
+				<li><a href="#" class="img03"></a></li>
+				<li><a href="#" class="img04"></a></li>
+			</ul>
+		</div>
+	</footer>
+	<!-- e footer -->
+</body>
+</html>

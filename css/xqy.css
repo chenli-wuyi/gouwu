@@ -1,0 +1,657 @@
+
+.name {
+	background: #f2f2f2;
+	text-align: center;
+}
+.name-wrap {
+	width: 1200px;
+	margin: 0 auto;
+	text-align: left;
+	height: 26px;
+	padding: 10px 0;
+}
+.name-wrap span {
+	font-size: 12px;
+	line-height: 26px;
+	color: #999;
+	letter-spacing: normal;
+	word-spacing: normal;
+	display: inline-block;
+	height: 20px;
+}
+.name-wrap a {
+	color: #777;
+	display: block;
+}
+.name-wrap .arow {
+	font-family: "微软雅黑","黑体";
+	line-height: 26px;
+	color: #aaa;
+	margin: 0 6px;
+}
+.xiangqing {
+	position: relative;
+	z-index: 2;
+	width: 100%;
+	background: #f2f2f2;
+}
+
+.xq-wrap {
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+	border-bottom: 1px solid #f2f2f2;
+	position: relative;
+	z-index: 2;
+	min-height: 503px;
+	background: #fff;
+	overflow: hidden;
+}
+
+/* 左边显示图片 */
+.left {
+	display: block;
+	position:relative;
+	z-index: 1000000;
+	width: 380px;
+	height: 490px;
+	float: left;
+	text-align: center;
+}
+/* 放大镜 */
+
+/* .smallImg {
+	position: relative;
+	display: inline-block;
+	text-decoration: none;
+	margin: auto;
+	width: 360px;
+	height: 360px;
+} */
+.smallImg {
+		position: absolute;
+		left: 5px;
+		top: 0;
+	}
+	.smallImg, .smallImg img {
+		width: 360px;
+		height: 360px;
+	}
+	.smallArea {
+	 	display: none; 
+	 	width: 150px; 
+	 	height: 150px; 
+	 	background: rgba(200, 222,111, 0.3); 
+	 	position: absolute; 
+	 	left: 10px; 
+	 	top: 0;
+	}
+	
+	.bigArea {
+		 display: none; 
+		 overflow: hidden; 
+		 width: 700px; 
+		 height: 503px; 
+		 background: rgba(200,111,222,0.3); 
+		 position: absolute; 
+		 left: 370px;
+		 top: 0px;
+		 border: 1px solid #ccc;
+	}
+	.bigImg {
+		width: 1200px;
+		 height: 1200px;
+		position: absolute;
+		 left: 0; 
+		 top: 0;
+	}
+
+/* 轮播图 */
+.luobotu{
+	position: absolute;
+	z-index: 1;
+	bottom: 40px;
+	left: 0;
+	width: 360px;
+	height: 56px;
+	margin: 10px auto 0 auto;
+}
+.luobotu a {
+	display: block;
+	left: 5px;
+	position: absolute;
+	z-index: 1;
+	top: 22px;
+	/* height: 54px; */
+	width: 18px;
+	text-align: center;
+}
+.luobotu .btn1 {
+	left: 5px;
+}
+.luobotu .btn2 {
+	/* left: 15px; */
+	margin-left: 340px;
+}
+.luobotu .box {
+	position: absolute;
+	left: 30px;
+	top: 0;
+	width: 310px;
+	height: 56px;
+	overflow: hidden;
+}
+.luobotu .box  ul {
+	width: 455px;
+	position: absolute;
+	left: 0;
+	top: 0;
+
+}
+.luobotu .box  ul li {
+	float: left;
+	width: 56px;
+	height: 56px;
+	margin-right: 5px;
+	border: 1px solid #f5f5f5;
+	cursor: pointer;
+}
+/* .luobotu .box  ul li a {
+	display: table-cell;
+	width: 50px;
+	height: 50px;
+	background-color: #fff;
+	text-align: center;
+	vertical-align: middle;
+	padding: 2px;
+	overflow: hidden;
+	border: 1px solid #f5f5f5;
+	outline: 0px;
+} */
+.luobotu .box  ul .active {
+	border-color: #f15c18;
+}
+.luobotu .box  ul li:hover {
+	border-color: #f15c18;
+}
+.luobotu .box  ul li img {
+	max-width: 100%;
+	max-height: 100%;
+	border: medium none;
+	vertical-align: middle;
+	/* background: #fff; */
+	
+}
+/* 收藏的数量 */
+.shoucang {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 1;
+	width: 360px;
+	height: 30px;
+	padding-top: 10px;
+}
+.shoucang a {
+	float: left;
+	margin-left: 10px;
+	line-height: 20px;
+	font-size: 14px;
+	margin-right: 60px;
+}
+/* 中间文字说明 */
+.mid {
+	width: 590px;
+	position: relative;
+	z-index: 2;
+	float: left;
+	margin-left: 6px;
+}
+.hh {
+	padding: 12px 8px ;
+	overflow: hidden;
+}
+.hh  h1 {
+	display: block;
+	font: normal 22px/24px "Microsoft Yahei";
+	margin-bottom: 4px;
+	color: #000;
+}
+.mid .good-self{
+	position:relative;
+	z-index: 3;
+	display: block;
+	background-color: #f15c18;
+	padding: 5px 15px;
+	overflow: hidden;
+}
+.mid .good-self .name {
+	float: left;
+	font-size: 14px;
+	font-weight: 600;
+	color: #ffff00;
+}
+.mid .good-self .data {
+	float: right;
+	color: #fff;
+	font-size: 14px;
+}
+.price {
+	background: url('../images/price.png') no-repeat 50% 50%;
+	background-size: cover;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+.price dl {
+	padding: 12px 0;
+}
+.price dl dt {
+	float: left;
+	text-align: left;
+	width: 60px;
+	margin-left: 20px;
+	color: #777;
+}
+.price dl dd {
+	float: left;
+	width: 510px;
+	text-align: left;
+	font-size: 12px ;
+	line-height: 30px;
+	vertical-align: top;
+	display: inline-block;
+	min-height: 30px;
+}
+.price dl dd em {
+	font-family: Verdana;
+	font-size: 16px;
+	vertical-align: baseline;
+	margin: 0 2px 0 5px;
+	color: #ff5300;
+}
+
+.price dl dd strong {
+	vertical-align: baseline;
+	font-family: Tahoma;
+	font-size: 30px;
+	font-weight: lighter;
+	color: #ff5300;
+}
+.price dl dd sub {
+	display: inline-block;
+	vertical-align: text-bottom;
+	padding-left: 10px;
+	margin: 0;
+	clear: both;
+	font-family: Verdana;
+	font-size: 12px;
+	color: #a1a1a1;
+	line-height: 16p;
+	text-decoration: line-through;
+}
+
+.wuliu {
+	position: relative;
+	z-index: 4;
+	padding-top: 5px;
+	margin-top: 10px;
+
+}
+
+.wuliu dl {
+	padding: 12px 0;
+}
+.wuliu dl dt {
+	float: left;
+	text-align: left;
+	width: 60px;
+	margin-left: 20px;
+	color: #777;
+}
+.wuliu dl dd {
+	float: left;
+	width: 510px;
+	text-align: left;
+	font-size: 12px ;
+	line-height: 30px;
+	vertical-align: top;
+	display: inline-block;
+	min-height: 30px;
+	cursor: pointer;
+}
+.fuwu{
+	position: relative;
+	z-index: 2;
+	padding-top: 5px;
+	margin-top: 10px;
+}
+
+.fuwu dl {
+	padding: 12px 0;
+}
+.fuwu dl dt {
+	float: left;
+	text-align: left;
+	width: 60px;
+	margin-left: 20px;
+	color: #777;
+}
+.fuwu dl dd {
+	float: left;
+	width: 510px;
+	text-align: left;
+	font-size: 12px ;
+	line-height: 30px;
+	vertical-align: top;
+	display: inline-block;
+	min-height: 30px;
+	
+}
+.fuwu dl dd a {
+	color:#e80012;
+}
+/* 选择 */
+
+.libiao {
+	position: relative;
+	z-index: 3;
+	border-top: 1px solid #f1f1f1;
+	margin-top: 20px;
+	padding-top: 10px;
+}
+.yanse {
+
+}
+.yanse dl {
+	padding: 12px 0;
+}
+.yanse dl dt {
+	float: left;
+	text-align: left;
+	width: 60px;
+	margin-left: 20px;
+	color: #777;
+}
+.yanse dl dd {
+	float: left;
+	width: 510px;
+	text-align: left;
+	font-size: 12px ;
+	line-height: 30px;
+	vertical-align: top;
+	display: inline-block;
+	min-height: 30px;
+	cursor: pointer;
+}
+
+.yanse dl dd li {
+	vertical-align: top;
+	display: inline-block;
+	margin: 0 5px 5px 0;
+	position: relative;
+	z-index: 1;
+	border: 1px solid #ff5300;
+	/* height: 28px; */
+
+}
+.yanse dl dd li img {
+	width: 24px;
+	height: 24px;
+		display: inline-block;
+	/* position: absolute; */
+	/* left: 2px; */
+	margin-top: 2px;
+	overflow: hidden;
+	margin-right: 5px;
+	vertical-align: center;
+}
+.yanse dl dd li  span {
+	display: inline-block;
+	color: #ff5300;
+	/* position: absolute; */
+}
+
+
+.shuliang dl {
+	padding: 12px 0;
+}
+.shuliang dl dt {
+	float: left;
+	text-align: left;
+	width: 60px;
+	margin-left: 20px;
+	color: #777;
+}
+.shuliang dl dd {
+	float: left;
+	width: 510px;
+	text-align: left;
+	font-size: 12px ;
+	line-height: 30px;
+	vertical-align: top;
+	display: inline-block;
+	min-height: 30px;
+	cursor: pointer;
+}
+.shuliang dl dd .amout {
+	width: 113px;
+	height: 30px;
+	overflow: hidden;
+}
+.shuliang dl dd .amout span {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	background: #fafafa;
+	border-color: #e1e1e1;
+	cursor: pointer;
+	float: left;
+}
+.shuliang dl dd .amout input {
+	display: inline-block;
+	width: 48px;
+	height: 26px;
+	text-align: center;
+	border: 1px solid #e1e1e1;
+	outline: none;
+		float: left;
+}
+/* 购买 */
+.mai {
+	height: 30px;
+	padding: 10px 0 10px 80px;	
+}
+
+.mai a {
+	display: inline-block;
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border: solid 1px;
+	margin-top: 20px;
+	color: #FF6D02;
+	font: lighter 18px/40px "Microsoft Yahei";
+		
+}
+.mai .a1 {
+	border-color: #ff5007;
+	background-color: #ff5008;
+	color: #fff;
+}
+
+.mai .a2 {
+	border-color: #F2DCBC;
+	background-color: #FFF5EC;
+	color: #FF6D02;
+}
+
+.liyou {
+	margin-top: 60px;
+	overflow: hidden;
+}
+.liyou dl dt {
+	float: left;
+	font-size: 12px;
+	line-height: 30px;
+	color: #777;
+	text-align: left;
+	width: 60px;
+	margin-left: 20px;
+	display: inline-block;
+}
+.liyou dl dd {
+	float: left;
+	width: 510px;
+	text-align: left;
+	font-size: 12px ;
+	line-height: 30px;
+	vertical-align: top;
+	display: inline-block;
+	min-height: 30px;
+	cursor: pointer;
+}
+
+
+/* 右边辅助部分 */
+.xiangqing .right{
+	position: absolute;
+	z-index: 4;
+	left: 988px;
+	top: 10px;
+	width: 200px;
+	height: 480px;
+	float: left;
+}
+/* shore-img部分 */
+.shore-img {
+	padding: 15px 0;
+	border-top: 1px solid #eee;
+}
+.shore-img a {
+	display: block;
+	width: 200px;
+	height: 60px;
+}
+/* shore-name部分 */
+.shore-name {
+	padding: 15px 10px;
+	border-top: 1px solid #eee;
+}
+
+.shore-name  h2 {
+	width: 180px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 14px;
+	color: #0259a0;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+/* shore-score部分 */
+.shore-score {
+	padding: 15px 10px;
+	border-top: 1px dashed #e4e4e4;
+	overflow: hidden;
+}
+
+
+.shore-score h4{
+	width: 70px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 600;
+	float: left;
+	color: #da542e;
+	margin: 20px 0;
+}
+.shore-score div {
+	float: right;
+	width: 110px;
+}
+.shore-score div p {
+	line-height: 24px;
+	color: #999;
+}
+.shore-score div p  span {
+	color: #DA542E;
+	padding-left: 5px;
+	font-weight: 600;
+}
+
+.shore-score div .green span {
+	color: #28B779;
+}
+
+/* shore-button */
+
+.shore-button {
+	padding: 15px 0;
+	border-top: 1px dashed #eee;
+	/* overflow: hidden; */
+}
+.shore-button a {
+	color: #666;
+	background: #f9f9f9;
+	border: 1px solid #cdcdcd;
+	padding: 4px 8px;
+	height: 20px;
+	width: 72px;
+	float: left;
+	text-align: center;
+	margin-right: 10px;
+	margin-bottom: 12px;
+}
+.shore-button a i {
+	background: url(../images/i.png) no-repeat;
+	display: inline-block;
+	width: 14px;
+	height: 12px;
+	vertical-align: middle;
+	margin-right: 6px;
+	margin-bottom: 2px;
+}
+.shore-button a:nth-child(2) i {
+	background-position: -17px 0;
+}
+.shore-button a:nth-child(3) i {
+	background-position: -51px 0;
+}
+.shore-button a:nth-child(4) i {
+	background-position: -51px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

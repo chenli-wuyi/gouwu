@@ -1,0 +1,60 @@
+/*公共样式*/
+.header,.header-wrap-auto,.nav-wrapper,.mid-wrap,#main,.footer_auto{
+	width: 1211px;
+	margin:0 auto;
+}
+/*header*/
+#header{
+	height: 38px;
+	background: #f6f6f6;
+	
+}
+
+.header-wrap{
+	height:109px;
+	background: #fff;
+}
+/*nav*/
+nav{
+	height:41px;
+	background: #ffffff;
+	border-bottom:1px solid #f15c18;
+}
+/*mid*/
+.mid{
+	background: #ffffff;
+}
+/*main*/
+main{
+	background: #f2f2f2;
+	overflow: hidden;
+}
+
+/* footer */
+footer{
+	height: 181px;
+	/* background: #f2f2f2; */
+	background: #343a3a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

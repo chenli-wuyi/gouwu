@@ -1,0 +1,183 @@
+
+.mid-top{
+	height: 80px;
+
+}
+
+.mid-top-left,.mid-top-right,.mid-right{
+	float:left;
+}
+
+.mid-top-left,.mid-top-right{
+	width:410px;
+	height: 70px;
+	border:1px solid #e4e4e4;
+	margin-left:10px;
+}
+.tv{
+	width:80px;
+	height: 60px;
+	float: left;
+	margin:8px 15px;
+}
+
+.top1{
+	float: left;
+	height: 60px;
+	width:290px;
+}
+
+.top1 a img{
+	float: left;
+	margin-right:20px;
+	margin-top:6px;
+}
+.top1 p {
+	margin-top:10px;
+	margin-bottom: 15px;
+}
+.top1 span {
+	font-size:18px;
+	font-weight: 700;
+	color:#f15c18;
+}
+.mid-top-left .top1 span:last-child{
+	width:86px;
+	height: 22px;
+	border:1px solid #f22d25;
+	margin-left:20px;
+	line-height: 22px;
+}
+.mid-top-left .top1 span:last-child a{
+	font-size: 12px;
+	color:#f22d25;
+}
+
+/*mid-img部分*/
+.mid-img{
+	height: 400px;
+	position: relative;
+}
+
+.mid-img-right{
+	width:248px;
+	height:400px;
+	position: absolute;
+	right:107px;
+	top:0; 
+	background: #f8f5ed;
+	text-align: center;
+	opacity: 0.8;
+}
+
+.mid-img-right h2{
+	font-size: 18px;
+	color: #000000;
+	margin:18px 0;
+}
+.mid-img-right a img{
+	margin-left:30px;
+}
+.mid-img-right h3{
+	font-size:14px;
+	color:#000000;
+	margin:6px 0 14px; 
+}
+.mid-img-right p{
+	font-size:12px;
+	color:#666666;
+	margin:0 30px;
+}
+
+/*轮播部分*/
+.lunbo{
+	width:790px;
+	height: 400px;
+	overflow: hidden;
+	position: relative;
+}
+.mid-list1{
+	width:3950px;
+	height: 400px;
+	position: absolute;
+	left: 0;
+	top:0;
+}
+
+.mid-list1 li,.mid-list1 img{
+	width: 790px;
+	height: 400px;
+}
+.mid-list1 li {
+	float: left;
+}
+
+.mid-list2{
+	width: 200px;
+	height: 20px;
+	position: absolute;
+	left:300px;
+	bottom:50px;
+}
+.mid-list2 li{
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	background: black;
+	text-align: center;
+	line-height: 18px;
+	margin-left: 5px;
+	float: left;
+	cursor: pointer;
+}
+
+.mid-list2 .active{
+	background: orange;
+}
+
+#prev, #next {
+	width: 22px;
+	height: 60px;
+	text-align: center;
+	background: orange;
+	position: absolute;
+	top: 45%;
+	cursor: pointer;
+	/*display: none;*/
+} 
+#prev {
+	left: 10px;
+	
+}
+#next {
+	right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

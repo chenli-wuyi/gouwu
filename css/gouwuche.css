@@ -1,0 +1,409 @@
+.header-wrap {
+	border-bottom: 1px solid #f15c18;
+}
+.ncc-flow {
+	width: 640px;
+	height: 70px;
+	float: right;
+	margin: 15px 0;
+}
+.ncc-flow li {
+	font-size: 12px;
+	vertical-align: top;
+	display: inline-block;
+	width: 24%;
+	height: 70px;
+	position: relative;
+	z-index: 1;
+}
+.ncc-flow li p {
+	font-size: 14px/24px arial,"microsoft yahei";
+	color: #ccc;
+	text-align: center;
+	width: 100%;
+	height: 24px;
+	position: absolute;
+	z-index: 2;
+	left: 0;
+	bottom: 0;
+	overflow: hidden;
+}
+.ncc-flow li sub {
+	width: 5px;
+	height: 5px;
+	margin-left: -3px;
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	position: absolute;
+	z-index: 2;
+	top: 38px;
+	left: 50%;
+}
+.ncc-flow li div {
+	width: 100%;
+	height: 1px;
+	border: none 0;
+	position: absolute;
+	z-index: 1;
+	top: 29px;
+	left: 0;
+	background: #ddd;
+	font-size: 1px;
+	display: block;
+	margin: 12px 0;
+	overflow: hidden;
+} 
+.ncc-flow .current p {
+	color: #616161;
+}
+.ncc-flow .current sub {
+	background: #616161;
+	border-color: #616161;
+	box-shadow: 0 0 1px 3px #e1e1e1;
+}
+
+.ncc-flow .current .hr {
+	background-color: #616161;
+}
+/* 购物车 */
+.gouMain {
+	position: relative;
+	z-index: 1;
+	background: #f7f7f7;
+	padding-bottom:30px ;
+	min-height: 650px;
+}
+.gouWrap {
+	width: 1190px;
+	margin: 0 auto;
+}
+.gouTitle {
+	height: 50px;
+	padding: 15px 0;
+	border : solid #f7f7f7;
+	border-width: 1px 0 0 ;
+	border-bottom: 1px solid #f5f5f5;
+}
+.gouTitle h3 {
+	font: lighter 24px/30px arial "Microsoft yahei";
+	color: #616161;
+}
+.gouTitle h5 {
+	font:  12px/20px arial "Microsoft yahei";
+	color: #bfbfbf;
+}
+.mod-head {
+	height: 20px;
+	padding: 6px 0 14px 0;
+}
+.clear {
+	clear: both;
+}
+.mod-head li {
+	float: left;
+	color: #212121;
+	line-height: 20px;
+}
+.mod-head li:nth-child(1){
+	width: 110px;
+}
+
+.mod-head li:nth-child(2){
+	width: 480px;
+	text-indent: 12px;
+}
+.mod-head li:nth-child(3){
+	width: 166px;
+	text-indent: 70px;
+}
+.mod-head li:nth-child(4){
+	width: 175px;
+	padding-right: 15px;
+	text-align: right;
+}
+.mod-head li:nth-child(5){
+	width: 78px;
+	text-indent: 30px;
+}
+.mod-head li:nth-child(6){
+	width: 150px;
+	text-align:right;
+}
+/* 商品列表 */
+.mod-body {
+	margin-bottom: 20px;
+	background: #fff;
+	border-bottom: 1px solid #e1e1e1;
+	z-index: 1;
+}
+.shore-bar {
+	position: relative;
+	z-index: 2;
+	display: block;
+	height: 48px;
+	padding: 0 20px;
+	line-height: 48px;
+}
+.shore-bar span{
+	display: inline-block;
+	height: 16px;
+}.shore-bar span input {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+	outline: none;
+}
+.shore-bar a {
+	font-size: 14px;
+	color: #333;
+}
+/* 信息 */
+.goods {
+	position: relative;
+	z-index: 1;
+	padding: 20px 20px 25px 20px;
+	border-top: 1px solid #e1e1e1;
+	overflow: hidden;
+}
+.goods-click {
+	float: left;
+	margin-right: 5px;
+}
+.goods-click span {
+	display: inline-block;
+	height: 16px;
+}
+.goods-click span input {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+.goods-img {
+	float: left;
+	border: 1px solid #e1e1e1;
+	width: 80px;
+	height: 80px;
+	
+}
+.goods-img div {
+	text-align: center;
+	width: 80px;
+	height: 80px;
+}
+.goods-img div img {
+	max-height: 100%;
+	max-width: 100%;
+	vertical-align: middle;
+	margin: 10% auto;
+}
+
+.goods-main {
+	display: block;
+	width: 1025px;
+	float: left;
+	margin-left: 15px;
+}
+.spu-name {
+	display: block;
+	font-size: 13px;
+	height: 20px;
+	line-height: 20px;
+	font-family: "microsoft yahei";
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin-bottom: 10px;
+}
+.parel-remove {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	right: 0;
+	bottom: 0;
+	width: 60px;
+	height: 18px;
+	padding: 4px 12px 12px 0;
+	background: #f5f5f5;
+}
+.parel-remove a {
+	
+	margin-left: 3px;
+
+}
+.spu-singles {
+	position: relative;
+	z-index: 1;
+	width: 98%;
+	margin: 0;
+	padding: 0;
+	margin-left: 2%;
+}
+.goods-sku {
+	height: 26px;
+}
+.goods-sku td {
+	border-width: 1px;
+	border-color: #fff;
+	border-style: dotted;
+	vertical-align: middle;
+	padding: 7px 0;
+}
+.goods-sku td:nth-child(2){
+	width: 20px;
+}
+.goods-sku td:nth-child(3){
+	width: 350px;
+	height: 26px;
+	overflow: hidden;
+	line-height: 26px;
+}
+.goods-sku .sku-num{
+	width: 96px;
+	position: relative;
+}
+.goods-sku .sku-num a {
+	display: block;
+	width: 22px;
+	height: 24px;
+	background: #fafafa;
+	text-align: center;
+	float: left;
+	border: 1px solid #e1e1e1;
+	text-decoration: none;
+}
+.goods-sku .sku-num a:nth-child(1){
+	border-radius: 3px 0 0 3px;
+}
+.goods-sku .sku-num a:nth-child(3){
+	border-radius: 0 3px 3px 0;
+}
+.goods-sku .sku-num input {
+	display: block;
+	float: left;
+	width: 38px;
+	height: 20px;
+	text-align: center;
+	padding: 2px 4px;
+	border: 1px solid #e1e1e1;
+	border-left: none;
+	border-right: none;
+	line-height: 20px;
+}
+.goods-sku td:nth-child(5){
+	width: 30px;
+}
+.goods-sku td:nth-child(6){
+	width: 154px;
+	padding-right: 15px;
+	text-align: right;
+	font-family: Tahoma;
+	line-height: 26px;
+	color: #616161;
+}
+
+.goods-sku td:nth-child(7){
+	width: 78px;
+	text-align: center;
+	line-height: 26px;
+}
+.goods-sku .sku-price {
+	width: 140px;
+	text-align: right;
+}
+.goods-sku .sku-price em {
+	font-family: Tahoma;
+	font-size: 14px;
+	line-height: 26px;
+	color: #ff7300;
+	font-weight: 600;
+}
+/* <!-- 结算 --> */
+.total{
+	background: #eee;
+	height: 56px;
+	border-bottom: 1px solid #e1e1e1;
+	line-height: 56px;
+	overflow: hidden;
+}
+.actions {
+	float: left;
+	padding-left: 20px;
+	width: 190px;
+	color: #222;
+}
+.actions  input {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.actions  label{
+	cursor: default;
+}
+.actions a {
+	display: inline-block;
+	margin-left: 10px;
+	color: #333;
+}
+
+.mes {
+	width: 820px;
+	float: left;
+}
+
+.mes  dl {
+	display: block;
+	float: right;
+	height: 56px;
+}
+
+.mes  dl dt {
+	float: left;
+}
+.mes  dl dd {
+	float: left;
+	margin-right: 30px;
+}
+.mes  dl dd span {
+	display: inline-block;
+	margin-right: 5px;
+	font-family: Tahoma;
+	font-size: 16px;
+	color: #000;
+}
+.mes  dl dd strong {
+	display: inline-block;
+	margin-right: 5px;
+	font-family: Tahoma;
+	font-size: 22px;
+	color: #ff7300;
+}
+.form {
+	float: right;
+}
+.form button {
+	background: #ff7300;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+	width: 150px;
+	height: 56px;
+	border: none ;
+	font-size: 16px;
+	line-height: 56px;
+	font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
